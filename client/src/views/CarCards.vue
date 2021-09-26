@@ -30,10 +30,12 @@ export default {
       this.cardata = cars.data;
     },
     async buyCar(event) {
+      event.title += ' RESERVED!';
       await axios({
         method: 'PATCH',
         url: 'http:/127.0.0.1:3000/cars/' + event.id,
         'content-type': 'application/json',
+        data: event,
       });
     },
   },
