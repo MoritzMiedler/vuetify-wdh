@@ -15,7 +15,7 @@
       <br />
       {{ cardata.description }}
       <br />
-      <v-btn class="red darken-3 mt-2 white--text" @click="buttonClick">Buy Car</v-btn>
+      <v-btn class="red darken-3 mt-2 white--text" @click="buttonClick()">Buy Car</v-btn>
     </div>
   </v-card>
 </template>
