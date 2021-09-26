@@ -1,5 +1,13 @@
 <template>
-  <div><CarCard v-for="(car, i) in cardata" :key="i"></CarCard></div>
+  <v-row class="d-flex flex-wrap"
+    ><CarCard
+      class="ma-5 d-flex flex-column justify-end"
+      style="width:400px"
+      v-for="(car, i) in cardata"
+      :key="i"
+      :cardata="car"
+    ></CarCard
+  ></v-row>
 </template>
 
 <script>
